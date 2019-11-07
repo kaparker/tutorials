@@ -22,7 +22,7 @@ page = urllib.request.urlopen(urlpage)
 # parse the html using beautiful soup and store in variable 'soup'
 soup = BeautifulSoup(page, 'html.parser')
 # find product items
-results = soup.find_all('div', attrs={'class': 'listing category_templates clearfix productListing'})
+results = soup.find_all('div', attrs={'class': 'co-product'})
 print('BeautifulSoup - Number of results', len(results))
 # since the page uses javascript returns 0 results
 
