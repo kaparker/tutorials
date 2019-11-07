@@ -37,7 +37,8 @@ driver.execute_script("window.scrollTo(0, document.body.scrollHeight);var lenOfP
 # sleep for 30s
 time.sleep(30)
 # find elements by xpath
-results = driver.find_elements_by_xpath("//*[@id='componentsContainer']//*[contains(@id,'listingsContainer')]//*[@class='product active']//*[@class='title productTitle']")
+#results = driver.find_elements_by_xpath("//*[@id='componentsContainer']//*[contains(@id,'listingsContainer')]//*[@class='product active']//*[@class='title productTitle']")
+results = driver.find_elements_by_xpath("//*[@class=' co-product-list__main-cntr']//*[@class=' co-item ']//*[@class='co-product']//*[@class='co-item__title-container']//*[@class='co-product__title']")
 print('Firefox Webdriver - Number of results', len(results))
 
 # create empty array to store data
@@ -69,7 +70,8 @@ driver.execute_script("window.scrollTo(0, document.body.scrollHeight);var lenOfP
 # sleep for 30s
 time.sleep(30)
 # find elements by xpath
-results = driver.find_elements_by_xpath("//*[@id='componentsContainer']//*[contains(@id,'listingsContainer')]//*[@class='product active']//*[@class='title productTitle']")
+#results = driver.find_elements_by_xpath("//*[@id='componentsContainer']//*[contains(@id,'listingsContainer')]//*[@class='product active']//*[@class='title productTitle']")
+results = driver.find_elements_by_xpath("//*[@class=' co-product-list__main-cntr']//*[@class=' co-item ']//*[@class='co-product']//*[@class='co-item__title-container']//*[@class='co-product__title']")
 print('PhantomJS Webdriver - Number of results', len(results))
 
 # create empty array to store data
@@ -106,7 +108,8 @@ driver.execute_script("window.scrollTo(0, document.body.scrollHeight);var lenOfP
 # sleep for 30s
 time.sleep(30)
 # find elements by xpath
-results = driver.find_elements_by_xpath("//*[@id='componentsContainer']//*[contains(@id,'listingsContainer')]//*[@class='product active']//*[@class='title productTitle']")
+# results = driver.find_elements_by_xpath("//*[@id='componentsContainer']//*[contains(@id,'listingsContainer')]//*[@class='product active']//*[@class='title productTitle']")
+results = driver.find_elements_by_xpath("//*[@class=' co-product-list__main-cntr']//*[@class=' co-item ']//*[@class='co-product']//*[@class='co-item__title-container']//*[@class='co-product__title']")
 print('PhantomJS Webdriver - Number of results', len(results))
 
 # create empty array to store data
